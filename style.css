@@ -72,6 +72,7 @@ a{
 #form_section h3{
     width: 90%;
     font-weight: normal;
+    font-size: 15px;
 }
 
 fieldset {
@@ -114,4 +115,22 @@ button {
     background-color: rgb(109, 97, 97);
     color: white;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+/* vaildations */
+
+#password:user-invalid, #confirm_password:user-invalid{
+    border: 2px solid red;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid rgb(0, 15, 224);
+}
+
+label:not([required])::after{
+    content: "*";
+    color: red;
+    vertical-align: super
 }
