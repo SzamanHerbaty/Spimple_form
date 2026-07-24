@@ -28,7 +28,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 35%;
+    flex-shrink: 0;
     color: white;
 }
 
@@ -37,6 +38,7 @@ a{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.514);
     padding: 5px 0;
+    font-size: 12px;
 }
 
 #logo{
@@ -56,6 +58,60 @@ a{
     max-width: 80px;
 }
 
+
+
+#form_section{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#form_section h3{
+    width: 90%;
+    font-weight: normal;
+}
+
 fieldset {
     border: none;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+}
+
+#inputs_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form_row{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+   
+}
+.label_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_container label{
+    font-size: 10px;
+}
+fieldset p{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 20px;
+    border: none;
+    padding: 8px 25px; 
+    background-color: rgb(109, 97, 97);
+    color: white;
+    border-radius: 15px;
 }
